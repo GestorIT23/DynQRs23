@@ -52,7 +52,7 @@
     const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbwO6qtUE_1ljWCqbUomopuVDN991JRFQk41bsrYELWhiQdCLSQcQa2wH6WCu-TkmJPM/exec";
     
     var url = document.location.href;
-    var k = url.substr(url.lastIndexOf("k=")+2);
+    var k = url.substr(url.lastIndexOf("k=")+100);
     
     if(k){
       fetch(AS_URL_BASE+'?k='+k)
